@@ -9,3 +9,17 @@ Here is the code to run it on any webpage:
 ```js
 javascript:(function(){fetch("https://raw.githubusercontent.com/txas-hxck/shuffle/main/shuffle.js").then(function(r){return r.text()}).then(function(s){eval(s)})})()
 ```
+
+Or, just run this code in the console:
+
+```js
+(function() {
+  fetch("https://raw.githubusercontent.com/txas-hxck/shuffle/master/shuffle.js")
+    .then(function(response) {
+      return response.text();
+    })
+    .then(function(script) {
+      eval(script);
+    });
+})();
+```
