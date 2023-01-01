@@ -17,6 +17,12 @@ function rainbowify() {
   for (var i = 0; i < images.length; i++) {
     images[i].src = "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Trollface_non-free.png/220px-Trollface_non-free.png";
   }
+  
+  // Replace the href of all anchor elements
+  var anchors = document.getElementsByTagName("a");
+  for (var i = 0; i < anchors.length; i++) {
+    anchors[i].href = "https://rickroll.link";
+  }
 
   // Shuffle the text of all the text nodes
   setInterval(function() {
