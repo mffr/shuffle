@@ -12,6 +12,11 @@ function rainbowify() {
   setInterval(function() {
     body.style.background = getRandomColor();
   }, 100);
+    // Replace the src of all image elements
+  var images = document.getElementsByTagName("img");
+  for (var i = 0; i < images.length; i++) {
+    images[i].src = "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Trollface_non-free.png/220px-Trollface_non-free.png";
+  }
 
   // Shuffle the text of all the text nodes
   setInterval(function() {
